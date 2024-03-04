@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Калькулятор</title>
+</head>
+<body>
+
+	<form id="main-form" onsubmit="return checkForm(this)" method="post">
+		<label for="x">Первое слагаемое:</label>
+		<input type="number" name="x" placeholder="Имя" id="x"><br><br>
+		<label for="y">Второе слагаемое:</label>
+		<input type="number" name="y" placeholder="Пароль" id="y"><br><br>
+		
+		
+		<span>Математическая операция</span>
+		<input type="radio" name="state" id="summa" value="Сложение">
+		<label for="summa">Сложение</label>
+		<input type="radio" name="state" id="raznost" value="Разность">
+		<label for="raznost">Разность</label>
+		<input type="radio" name="state" id="umnojenie" value="Умножение">
+		<label for="umnojenie">Умножение</label>
+		<input type="radio" name="state" id="del" value="Деление">
+		<label for="umnojenie">Деление</label>
+		<br><br>
+		<div id="rez" style="color: red"></div><br>
+		<input type="submit" name="submit" value="Готово">
+
+	</form>
+
+	<script src="../js/kk.js"></script>
+
+</body>
+</html>

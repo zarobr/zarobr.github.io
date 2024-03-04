@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Калькулятор</title>
+</head>
+<body>
+
+	<h1>Викторина</h1>
+
+	<form id="main-form" onsubmit="return checkForm(this)" method="post">
+		
+		
+		
+		<span>Какое животное самое быстрое</span>
+		<br><br>
+		<input type="radio" name="state1" value="Слон">
+		<label for="summa">Слон</label>
+		<input type="radio" name="state1" value="Сабака">
+		<label for="raznost">Сабака</label>
+		<input type="radio" name="state1" value="Улитка">
+		<label for="umnojenie">Улитка</label>
+		<input type="radio" name="state1" value="Геппард">
+		<label for="umnojenie">Геппард</label>
+		<br><br>
+		<div id="rez" style="color: red"></div><br>
+		<!--<input type="submit" name="submit" value="Готово">-->
+		
+
+		<span>Сколько будет 2*2*2</span>
+		<br><br>
+		<input type="radio" name="state2" value="2">
+		<label for="summa">2</label>
+		<input type="radio" name="state2" value="4">
+		<label for="raznost">4</label>
+		<input type="radio" name="state2" value="6">
+		<label for="umnojenie">6</label>
+		<input type="radio" name="state2" value="8">
+		<label for="umnojenie">8</label>
+		<br><br>
+		<div id="rez2" style="color: red"></div><br>
+		<!--<input type="submit" name="submit" value="Готово">-->
+		
+
+		<span>Столица Китая</span>
+		<br><br>
+		<input type="radio" name="state3" value="Пекин">
+		<label for="summa">Пекин</label>
+		<input type="radio" name="state3" value="Москва">
+		<label for="raznost">Москва</label>
+		<input type="radio" name="state3" value="Ереван">
+		<label for="umnojenie">Ереван</label>
+		<input type="radio" name="state3" value="Минск">
+		<label for="umnojenie">Минск</label>
+		<br><br>
+		<div id="rez3" style="color: red"></div><br>
+		<input type="submit" name="submit" value="Готово">
+		<br><br>
+
+		<div id="itog" style="color: blue;"></div><br>
+
+
+	</form>
+
+	<script src="../js/viktorina.js"></script>
+
+</body>
+</html>
